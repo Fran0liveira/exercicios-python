@@ -1,0 +1,38 @@
+print('='*20)
+print('BANCO CEV')
+print('='*20)
+resto = -1
+notas100 = notas50 = notas20 = notas10 = notas5 = notas2 = 0
+saque = float(input('Qual o valor que deseja sacar ?'))
+
+if saque >= 100:
+  notas = int (saque / 100)
+  resto = saque - (100 * notas) 
+  print('{} notas de RS 100,00'.format(notas))
+  print('\n')
+
+if resto >= 50:
+  notas = int(resto / 50)
+  resto = resto - (50 * notas) 
+  print('{} notas de R$50,00'.format(notas))
+
+if resto >= 20:
+  notas = int(resto / 20)
+  resto = resto - (20 * notas) 
+  print('{} notas de R$20,00'.format(notas))
+  print('\n')
+
+if resto >= 10:
+  notas = int(resto / 10)
+  resto = resto - (10 * notas) 
+  print('{} notas de R$10,00'.format(notas))
+
+if resto >= 5:
+  notas = int(resto / 5)
+  resto = resto - (5 * notas) 
+  print('{} notas de R$5,00'.format(notas))
+
+if resto >= 2:
+  notas = int(resto / 2)
+  resto = resto - (2 * notas) 
+  print('{} notas de R$2,00'.format(notas))
